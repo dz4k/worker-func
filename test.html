@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script src=./worker-func.js></script>
+
+<button id="btn">0</button>
+
+<script>
+(async () => {
+	const inc = await workerFunc('a', "return Number(a) + 1")
+
+	const btn = document.querySelector('#btn')
+
+	btn.addEventListener('click', async e => {
+		btn.innerText = await inc(btn.innerText)
+	})
+})()
+</script>

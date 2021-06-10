@@ -1,0 +1,4 @@
+
+h1. @worker-func@
+
+This was written as a proof-of-concept for "worker support":https://hyperscript.org/features/worker in the "_hyperscript":https://hyperscript.org web programming language. It takes a function and turns it into one that runs in a worker. It was only written as a test, if you actually want something like this, try something like "arqex/worker-function":https://github.com/arqex/worker-function.
